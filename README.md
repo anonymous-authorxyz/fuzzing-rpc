@@ -30,7 +30,7 @@ Go to [exmaple](example) dir, then run `try.sh` with a specified time budget, eg
 > `./try.sh 1s`
 
 After it finishes, you could get 
-- [src/em](replication/src/em): generated tests, e.g.,
+- [src/em](example/src/em): generated tests, e.g.,
 ```
 public class EM_RPC_1_Test_others {
 
