@@ -1,0 +1,15 @@
+*.class
+
+*.jar
+*.war
+*.ear
+
+/.idea/
+.idea/
+*.iml
+
+/example/snapshot.csv
+/example/statistics.csv
+/example/sut-log.txt
+/sourcecode/RpcAPIs/cs/thrift/artificial/thrift-ncs/target/
+/sourcecode/RpcAPIs/cs/thrift/artificial/thrift-scs/target/
