@@ -23,7 +23,7 @@ Our tool is built on the top of [EvoMaster](https://www.evomaster.org/) which su
 
 ### Fuzzing RPC-based API
 
-#### Try
+#### :arrow_forward: Try 
 To try our tool, we provide a bash script to run it on the _thrift-ncs_ RPC-based APIs.
 
 Go to [exmaple](example) dir, then run `try.sh` with a specified time budget, eg, 1s as a following example.
@@ -72,7 +72,7 @@ We provide a python script which could generate bash scripts for running the exp
 To replicate our experiment (100 000 RPC function calls with 30 repetitions), it would take around 30.64 hours using 
 > `python rpc-exp.py false 12345 rpc-exp 1 30 100000 400 100`.
 
-To try our tool, you could run once (i.e., Random and MIO algorithm) with 10 000 RPC function calls on the two case studies using
+To try the experiment, you could run once (i.e., Random and MIO algorithm) with 10 000 RPC function calls on the two case studies using
 > `python rpc-exp.py false 12345 rpc-exp 1 1 10000 400 2`.
 
 
