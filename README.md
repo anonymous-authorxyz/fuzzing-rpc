@@ -3,10 +3,10 @@
 
 In this package, we provide necessary info for replicating experiment in the paper.
 
-- [suts](suts) contains jars files for two artificial case studies (i.e., _thrif-ncs_ and _thrif-scs_) 
+- [suts](suts) contains jars files for two artificial case studies (i.e., _thrift-ncs_ and _thrift-scs_) 
 - [tools](tools) contains  our tool (i.e., [evomaster.jar](replication/evomaster.jar)) built with jar. Note that the jar could also be built with provided source code.
 - [rpc-exp.py](rpc-exp.py) is a python script used for conducting the experiment.
-- [sourcecode](sourcecode) contains source code of our approach ([RPC-EVO](sourcecode/EvoMaster) built on the top of [EvoMaster](https://www.evomaster.org/)) and artificial case studies developed with [Apache Thrift](https://thrift.apache.org/) ([RPC-based APIs](sourcecode/RpcAPIs))
+- [sourcecode](sourcecode) contains source code of [our approach](sourcecode/EvoMaster) (built on the top of [EvoMaster](https://www.evomaster.org/)) and [artificial case studies](sourcecode/EMB-RPC) developed with [Apache Thrift](https://thrift.apache.org/)
 - [rawdata](rawdata) contains raw experiment results on the two artificial case studies.
 - [r-script](r-script) provides R-scripts for analyzing results.
 - [generated_files](generated_files) are a set of tables and figures that could be generated with the [r-script](r-script) based on the [rawdata](rawdata).
@@ -59,9 +59,9 @@ public class EM_RPC_1_Test_others {
 #### Step by step
 There exist two simple steps to start the tool,
 
-Step 1. Start the driver which handles the SUT. The driver could be _embedded_ (see an [embedded driver](sourcecode/RpcAPIs/em/embedded/thrift/ncs/src/main/java/em/embedded/org/thriftncs/EmbeddedEvoMasterController.java) for rpc-ncs) or _external_ (see an [external driver](sourcecode/RpcAPIs/em/external/thrift/ncs/src/main/java/em/external/org/rpc/thriftncs/ExternalEvoMasterController.java)). Both could be started with IDE. 
+Step 1. Start the driver which handles the SUT. The driver could be _embedded_ (see an [embedded driver](sourcecode/RpcAPIs/em/embedded/thrift/ncs/src/main/java/em/embedded/org/thriftncs/EmbeddedEvoMasterController.java) for _thrift-ncs_) or _external_ (see an [external driver](sourcecode/RpcAPIs/em/external/thrift/ncs/src/main/java/em/external/org/rpc/thriftncs/ExternalEvoMasterController.java) for _thrift-ncs_). Both could be started with IDE. 
 
-Step 2. Run the tool with specified configruation, e.g., time budget
+Step 2. Run the tool with specified configruation, e.g., 1s time budget
 > `java -jar evomaster.jar --maxTime=1s`
 
 all available configurations could be found with `java -jar evomaster.jar --help`
